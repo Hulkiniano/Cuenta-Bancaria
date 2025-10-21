@@ -128,17 +128,17 @@ public class InicioSesion extends javax.swing.JFrame {
         jTextFieldBienvenida.setEditable(false);
         jTextFieldBienvenida.setBackground(new java.awt.Color(0, 153, 0,0));
         jTextFieldBienvenida.setFont(new java.awt.Font("Verdana", 1, 36)); // NOI18N
-        jTextFieldBienvenida.setForeground(new java.awt.Color(0, 153, 0));
+        jTextFieldBienvenida.setForeground(new java.awt.Color(255, 255, 204));
         jTextFieldBienvenida.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextFieldBienvenida.setText("BIENVENID@");
         jTextFieldBienvenida.setBorder(null);
         jTextFieldBienvenida.setFocusable(false);
-        jPanelInicioSesion.add(jTextFieldBienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(167, 16, 283, 42));
+        jPanelInicioSesion.add(jTextFieldBienvenida, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 283, 42));
 
         jTextFieldUsuario.setEditable(false);
         jTextFieldUsuario.setBackground(new java.awt.Color(0, 153, 0,0));
         jTextFieldUsuario.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
-        jTextFieldUsuario.setForeground(new java.awt.Color(0, 153, 0));
+        jTextFieldUsuario.setForeground(new java.awt.Color(255, 255, 204));
         jTextFieldUsuario.setText("Usuario:");
         jTextFieldUsuario.setToolTipText("");
         jTextFieldUsuario.setBorder(null);
@@ -148,7 +148,7 @@ public class InicioSesion extends javax.swing.JFrame {
         jTextFieldContraseña.setEditable(false);
         jTextFieldContraseña.setBackground(new java.awt.Color(0, 153, 0,0));
         jTextFieldContraseña.setFont(new java.awt.Font("Verdana", 1, 24)); // NOI18N
-        jTextFieldContraseña.setForeground(new java.awt.Color(0, 153, 0));
+        jTextFieldContraseña.setForeground(new java.awt.Color(255, 255, 204));
         jTextFieldContraseña.setText("Contraseña:");
         jTextFieldContraseña.setToolTipText("");
         jTextFieldContraseña.setBorder(null);
@@ -174,7 +174,7 @@ public class InicioSesion extends javax.swing.JFrame {
 
         jPasswordFieldContraseña.setBackground(new java.awt.Color(0, 153, 0,0));
         jPasswordFieldContraseña.setFont(new java.awt.Font("Liberation Sans", 1, 24)); // NOI18N
-        jPasswordFieldContraseña.setForeground(new java.awt.Color(0, 153, 0));
+        jPasswordFieldContraseña.setForeground(new java.awt.Color(255, 255, 204));
         jPasswordFieldContraseña.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 3, 0, new java.awt.Color(102, 0, 102)));
         jPasswordFieldContraseña.setCaretColor(new java.awt.Color(102, 0, 102));
         jPasswordFieldContraseña.setEchoChar('*');
@@ -253,7 +253,7 @@ public class InicioSesion extends javax.swing.JFrame {
       
         if(jTextFieldTextoUsuario.getText().equals("Introduce tu nombre de usuario") & jTextFieldTextoUsuario.getForeground().equals(new Color(204,204,204))){
             jTextFieldTextoUsuario.setText("");
-            jTextFieldTextoUsuario.setForeground(new Color(0,153,0));
+            jTextFieldTextoUsuario.setForeground(new Color(255,255,204));
         }
     }//GEN-LAST:event_jTextFieldTextoUsuarioFocusGained
 
@@ -423,17 +423,7 @@ public class InicioSesion extends javax.swing.JFrame {
         
         
     }
-    public void quitarOpacidad(){
-        
-        for (Component c : jPanelGeneral.getComponents()) {
-               if(c instanceof JComponent){
-                   ((JComponent) c).setOpaque(false); //Quitar a todos los componentes su opacidad
-                   ((JComponent) c).setBackground(new Color(0,0,0,0));
-               }
-               jPanelGeneral.revalidate();
-               jPanelGeneral.repaint();
-        }
-    }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonAceptar;

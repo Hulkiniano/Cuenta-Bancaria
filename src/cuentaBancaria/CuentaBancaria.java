@@ -11,7 +11,6 @@ package cuentaBancaria;
 public class CuentaBancaria {
     public static void main(String[] args) {
         InicioSesion is = new InicioSesion();
-        is.quitarOpacidad();
         is.setVisible(true);
     }
 }
