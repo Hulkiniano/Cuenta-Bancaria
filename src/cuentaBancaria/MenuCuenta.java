@@ -38,44 +38,46 @@ public class MenuCuenta extends javax.swing.JFrame {
         jLabelDNI = new javax.swing.JLabel();
         jLabelTfno = new javax.swing.JLabel();
         jLabelTipo = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        jTextFieldCantidad = new javax.swing.JTextField();
+        jTextFieldDNI = new javax.swing.JTextField();
+        jTextFieldDir = new javax.swing.JTextField();
         jLabelNombre = new javax.swing.JLabel();
         jLabelMvo = new javax.swing.JLabel();
         jLabelCliente1 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        jComboBoxMvo = new javax.swing.JComboBox<>();
+        jComboBoxCliente = new javax.swing.JComboBox<>();
+        jComboBoxTipo = new javax.swing.JComboBox<>();
         jLabelCliente = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
+        jTextFieldNombre = new javax.swing.JTextField();
         jLabelSaldo = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jComboBox4 = new javax.swing.JComboBox<>();
+        jTextFieldCantidad2 = new javax.swing.JTextField();
+        jComboBoxCantidad = new javax.swing.JComboBox<>();
         jLabelCuenta = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox<>();
+        jComboBoxCuenta = new javax.swing.JComboBox<>();
         jLabelCantidad = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        jTextFieldTfno = new javax.swing.JTextField();
         jLabelNombre1 = new javax.swing.JLabel();
         jLabelDNI1 = new javax.swing.JLabel();
         jLabelDireccion1 = new javax.swing.JLabel();
         jLabelTfno1 = new javax.swing.JLabel();
         jLabelMvo1 = new javax.swing.JLabel();
         jLabelCantidad2 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
+        jTextFieldSaldo = new javax.swing.JTextField();
+        jTextFieldNombre2 = new javax.swing.JTextField();
+        jTextFieldDNi2 = new javax.swing.JTextField();
+        jTextFieldDir2 = new javax.swing.JTextField();
+        jTextFieldTfno2 = new javax.swing.JTextField();
+        jTextFieldMvo2 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTableCita = new javax.swing.JTable();
         jLabelCantidad3 = new javax.swing.JLabel();
-        jTextField13 = new javax.swing.JTextField();
+        jTextFieldCliente = new javax.swing.JTextField();
         jButtonAceptar = new javax.swing.JButton();
         jLabelFondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+        setResizable(false);
 
         jPanelFondo.setBackground(new java.awt.Color(153, 153, 153));
         jPanelFondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -98,7 +100,7 @@ public class MenuCuenta extends javax.swing.JFrame {
         jLabelIcono.setBackground(new java.awt.Color(153, 153, 153));
         jLabelIcono.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icono.png"))); // NOI18N
         jLabelIcono.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanelFondo.add(jLabelIcono, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, -1, -1));
+        jPanelFondo.add(jLabelIcono, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 200, 200));
 
         jLabelDireccion.setBackground(new java.awt.Color(153, 153, 153));
         jLabelDireccion.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
@@ -127,26 +129,26 @@ public class MenuCuenta extends javax.swing.JFrame {
         jLabelTipo.setText("Tipo:");
         jPanelFondo.add(jLabelTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 70, 120, -1));
 
-        jTextField1.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField1.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField1.setBorder(null);
-        jTextField1.setOpaque(true);
-        jPanelFondo.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 280, 150, 30));
+        jTextFieldCantidad.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldCantidad.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldCantidad.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldCantidad.setBorder(null);
+        jTextFieldCantidad.setOpaque(true);
+        jPanelFondo.add(jTextFieldCantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 280, 150, 30));
 
-        jTextField3.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField3.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField3.setBorder(null);
-        jTextField3.setOpaque(true);
-        jPanelFondo.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, 290, 30));
+        jTextFieldDNI.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldDNI.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldDNI.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldDNI.setBorder(null);
+        jTextFieldDNI.setOpaque(true);
+        jPanelFondo.add(jTextFieldDNI, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 70, 290, 30));
 
-        jTextField4.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField4.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField4.setBorder(null);
-        jTextField4.setOpaque(true);
-        jPanelFondo.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 290, 30));
+        jTextFieldDir.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldDir.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldDir.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldDir.setBorder(null);
+        jTextFieldDir.setOpaque(true);
+        jPanelFondo.add(jTextFieldDir, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 290, 30));
 
         jLabelNombre.setBackground(new java.awt.Color(153, 153, 153));
         jLabelNombre.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
@@ -169,28 +171,28 @@ public class MenuCuenta extends javax.swing.JFrame {
         jLabelCliente1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanelFondo.add(jLabelCliente1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 280, 100, -1));
 
-        jComboBox1.setBackground(new java.awt.Color(153, 153, 153));
-        jComboBox1.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox1.setBorder(null);
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        jComboBoxMvo.setBackground(new java.awt.Color(153, 153, 153));
+        jComboBoxMvo.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jComboBoxMvo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxMvo.setBorder(null);
+        jComboBoxMvo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                jComboBoxMvoActionPerformed(evt);
             }
         });
-        jPanelFondo.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 280, 150, -1));
+        jPanelFondo.add(jComboBoxMvo, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 280, 150, -1));
 
-        jComboBox2.setBackground(new java.awt.Color(153, 153, 153));
-        jComboBox2.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox2.setBorder(null);
-        jPanelFondo.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 30, 250, -1));
+        jComboBoxCliente.setBackground(new java.awt.Color(153, 153, 153));
+        jComboBoxCliente.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jComboBoxCliente.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxCliente.setBorder(null);
+        jPanelFondo.add(jComboBoxCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 30, 250, -1));
 
-        jComboBox3.setBackground(new java.awt.Color(153, 153, 153));
-        jComboBox3.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox3.setBorder(null);
-        jPanelFondo.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 70, 250, -1));
+        jComboBoxTipo.setBackground(new java.awt.Color(153, 153, 153));
+        jComboBoxTipo.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jComboBoxTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxTipo.setBorder(null);
+        jPanelFondo.add(jComboBoxTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 70, 250, -1));
 
         jLabelCliente.setBackground(new java.awt.Color(153, 153, 153));
         jLabelCliente.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
@@ -198,12 +200,12 @@ public class MenuCuenta extends javax.swing.JFrame {
         jLabelCliente.setText("Cliente:");
         jPanelFondo.add(jLabelCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 30, 120, -1));
 
-        jTextField5.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField5.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField5.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField5.setBorder(null);
-        jTextField5.setOpaque(true);
-        jPanelFondo.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 290, 30));
+        jTextFieldNombre.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldNombre.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldNombre.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldNombre.setBorder(null);
+        jTextFieldNombre.setOpaque(true);
+        jPanelFondo.add(jTextFieldNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 30, 290, 30));
 
         jLabelSaldo.setBackground(new java.awt.Color(153, 153, 153));
         jLabelSaldo.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
@@ -211,23 +213,23 @@ public class MenuCuenta extends javax.swing.JFrame {
         jLabelSaldo.setText("Saldo:");
         jPanelFondo.add(jLabelSaldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 710, 90, -1));
 
-        jTextField6.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField6.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField6.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField6.setBorder(null);
-        jTextField6.setOpaque(true);
-        jPanelFondo.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 640, 170, 30));
+        jTextFieldCantidad2.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldCantidad2.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldCantidad2.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldCantidad2.setBorder(null);
+        jTextFieldCantidad2.setOpaque(true);
+        jPanelFondo.add(jTextFieldCantidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 640, 170, 30));
 
-        jComboBox4.setBackground(new java.awt.Color(153, 153, 153));
-        jComboBox4.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox4.setBorder(null);
-        jComboBox4.addActionListener(new java.awt.event.ActionListener() {
+        jComboBoxCantidad.setBackground(new java.awt.Color(153, 153, 153));
+        jComboBoxCantidad.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jComboBoxCantidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxCantidad.setBorder(null);
+        jComboBoxCantidad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox4ActionPerformed(evt);
+                jComboBoxCantidadActionPerformed(evt);
             }
         });
-        jPanelFondo.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 110, 250, -1));
+        jPanelFondo.add(jComboBoxCantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 110, 250, -1));
 
         jLabelCuenta.setBackground(new java.awt.Color(153, 153, 153));
         jLabelCuenta.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
@@ -236,16 +238,16 @@ public class MenuCuenta extends javax.swing.JFrame {
         jLabelCuenta.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanelFondo.add(jLabelCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 280, 120, -1));
 
-        jComboBox5.setBackground(new java.awt.Color(153, 153, 153));
-        jComboBox5.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox5.setBorder(null);
-        jComboBox5.addActionListener(new java.awt.event.ActionListener() {
+        jComboBoxCuenta.setBackground(new java.awt.Color(153, 153, 153));
+        jComboBoxCuenta.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jComboBoxCuenta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBoxCuenta.setBorder(null);
+        jComboBoxCuenta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox5ActionPerformed(evt);
+                jComboBoxCuentaActionPerformed(evt);
             }
         });
-        jPanelFondo.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 280, 160, -1));
+        jPanelFondo.add(jComboBoxCuenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 280, 160, -1));
 
         jLabelCantidad.setBackground(new java.awt.Color(153, 153, 153));
         jLabelCantidad.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
@@ -253,12 +255,12 @@ public class MenuCuenta extends javax.swing.JFrame {
         jLabelCantidad.setText("Cantidad:");
         jPanelFondo.add(jLabelCantidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 110, 120, -1));
 
-        jTextField2.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField2.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField2.setBorder(null);
-        jTextField2.setOpaque(true);
-        jPanelFondo.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 290, 30));
+        jTextFieldTfno.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldTfno.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldTfno.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldTfno.setBorder(null);
+        jTextFieldTfno.setOpaque(true);
+        jPanelFondo.add(jTextFieldTfno, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 290, 30));
 
         jLabelNombre1.setBackground(new java.awt.Color(153, 153, 153));
         jLabelNombre1.setFont(new java.awt.Font("Liberation Sans", 0, 24)); // NOI18N
@@ -302,47 +304,47 @@ public class MenuCuenta extends javax.swing.JFrame {
         jLabelCantidad2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanelFondo.add(jLabelCantidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 280, 110, -1));
 
-        jTextField7.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField7.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField7.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField7.setBorder(null);
-        jTextField7.setOpaque(true);
-        jPanelFondo.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 710, 170, 30));
+        jTextFieldSaldo.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldSaldo.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldSaldo.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldSaldo.setBorder(null);
+        jTextFieldSaldo.setOpaque(true);
+        jPanelFondo.add(jTextFieldSaldo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 710, 170, 30));
 
-        jTextField8.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField8.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField8.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField8.setBorder(null);
-        jTextField8.setOpaque(true);
-        jPanelFondo.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 170, 30));
+        jTextFieldNombre2.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldNombre2.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldNombre2.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldNombre2.setBorder(null);
+        jTextFieldNombre2.setOpaque(true);
+        jPanelFondo.add(jTextFieldNombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 170, 30));
 
-        jTextField9.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField9.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField9.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField9.setBorder(null);
-        jTextField9.setOpaque(true);
-        jPanelFondo.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 170, 30));
+        jTextFieldDNi2.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldDNi2.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldDNi2.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldDNi2.setBorder(null);
+        jTextFieldDNi2.setOpaque(true);
+        jPanelFondo.add(jTextFieldDNi2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 170, 30));
 
-        jTextField10.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField10.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField10.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField10.setBorder(null);
-        jTextField10.setOpaque(true);
-        jPanelFondo.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 490, 170, 30));
+        jTextFieldDir2.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldDir2.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldDir2.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldDir2.setBorder(null);
+        jTextFieldDir2.setOpaque(true);
+        jPanelFondo.add(jTextFieldDir2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 490, 170, 30));
 
-        jTextField11.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField11.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField11.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField11.setBorder(null);
-        jTextField11.setOpaque(true);
-        jPanelFondo.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, 170, 30));
+        jTextFieldTfno2.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldTfno2.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldTfno2.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldTfno2.setBorder(null);
+        jTextFieldTfno2.setOpaque(true);
+        jPanelFondo.add(jTextFieldTfno2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, 170, 30));
 
-        jTextField12.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField12.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField12.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField12.setBorder(null);
-        jTextField12.setOpaque(true);
-        jPanelFondo.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 590, 170, 30));
+        jTextFieldMvo2.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldMvo2.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldMvo2.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldMvo2.setBorder(null);
+        jTextFieldMvo2.setOpaque(true);
+        jPanelFondo.add(jTextFieldMvo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 590, 170, 30));
 
         jScrollPane1.setForeground(new java.awt.Color(102, 0, 102));
         jScrollPane1.setOpaque(false);
@@ -386,12 +388,12 @@ public class MenuCuenta extends javax.swing.JFrame {
         jLabelCantidad3.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanelFondo.add(jLabelCantidad3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 640, 120, -1));
 
-        jTextField13.setBackground(new java.awt.Color(153, 153, 153));
-        jTextField13.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
-        jTextField13.setForeground(new java.awt.Color(255, 255, 204));
-        jTextField13.setBorder(null);
-        jTextField13.setOpaque(true);
-        jPanelFondo.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, 170, 30));
+        jTextFieldCliente.setBackground(new java.awt.Color(153, 153, 153));
+        jTextFieldCliente.setFont(new java.awt.Font("Liberation Sans", 0, 18)); // NOI18N
+        jTextFieldCliente.setForeground(new java.awt.Color(255, 255, 204));
+        jTextFieldCliente.setBorder(null);
+        jTextFieldCliente.setOpaque(true);
+        jPanelFondo.add(jTextFieldCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 280, 170, 30));
 
         jButtonAceptar.setBackground(new java.awt.Color(0, 204, 51));
         jButtonAceptar.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
@@ -442,17 +444,17 @@ public class MenuCuenta extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_jLabelSalirMousePressed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void jComboBoxMvoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxMvoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_jComboBoxMvoActionPerformed
 
-    private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
+    private void jComboBoxCantidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxCantidadActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox4ActionPerformed
+    }//GEN-LAST:event_jComboBoxCantidadActionPerformed
 
-    private void jComboBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox5ActionPerformed
+    private void jComboBoxCuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxCuentaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox5ActionPerformed
+    }//GEN-LAST:event_jComboBoxCuentaActionPerformed
 
     private void jButtonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAceptarActionPerformed
         // TODO add your handling code here:
@@ -487,11 +489,11 @@ public class MenuCuenta extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonAceptar;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
-    private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JComboBox<String> jComboBoxCantidad;
+    private javax.swing.JComboBox<String> jComboBoxCliente;
+    private javax.swing.JComboBox<String> jComboBoxCuenta;
+    private javax.swing.JComboBox<String> jComboBoxMvo;
+    private javax.swing.JComboBox<String> jComboBoxTipo;
     private javax.swing.JLabel jLabelCantidad;
     private javax.swing.JLabel jLabelCantidad2;
     private javax.swing.JLabel jLabelCantidad3;
@@ -516,18 +518,18 @@ public class MenuCuenta extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelFondo;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTableCita;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField jTextFieldCantidad;
+    private javax.swing.JTextField jTextFieldCantidad2;
+    private javax.swing.JTextField jTextFieldCliente;
+    private javax.swing.JTextField jTextFieldDNI;
+    private javax.swing.JTextField jTextFieldDNi2;
+    private javax.swing.JTextField jTextFieldDir;
+    private javax.swing.JTextField jTextFieldDir2;
+    private javax.swing.JTextField jTextFieldMvo2;
+    private javax.swing.JTextField jTextFieldNombre;
+    private javax.swing.JTextField jTextFieldNombre2;
+    private javax.swing.JTextField jTextFieldSaldo;
+    private javax.swing.JTextField jTextFieldTfno;
+    private javax.swing.JTextField jTextFieldTfno2;
     // End of variables declaration//GEN-END:variables
 }
